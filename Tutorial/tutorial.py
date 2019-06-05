@@ -16,6 +16,11 @@ class MyApp(ShowBase):
         self.taskMgr.add(self.spinCameraTask, "SpinCameraTask")
         self.loadPandaActor()
 
+        # TODO: Make panda jump when button is pressed
+        # Keybindings
+        # Applying result of key press to panda actor
+        # Applying upward force to actor
+
     def loadScene(self):
         self.scene = self.loader.loadModel("models/environment")
         self.scene.reparentTo(self.render)
